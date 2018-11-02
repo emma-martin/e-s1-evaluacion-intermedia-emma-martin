@@ -4,23 +4,46 @@
     --text: #FFFFFF;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
 }
 
-.header {
-    position: fixed;
-    width: 100%;
-
+.padding10{
+    padding: 10px;
 }
 
+.header {
+    width: 100%;
+}
+
+.logo {
+    max-width: 155px;
+
+}
 .navBar a {
     text-decoration: none;
     color: var(--menu);
 }
 
-.navPannel {
+.navList {
     list-style: none;
     text-transform: uppercase;
+    padding-bottom: 13px;
+    font-size: 16px; 
 }
 
+.navList li {
+    display: inline;
+    margin: auto;
+    margin-left: 20px;
+}
+
+
+.mainTitle {
+    font-size: 30px;
+}
