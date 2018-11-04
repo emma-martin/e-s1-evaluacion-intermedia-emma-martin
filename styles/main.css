@@ -13,23 +13,30 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-.padding10{
-    padding: 10px;
+.paddingTop10{
+    padding-top: 10px;
 }
 
-.header {
-    width: 100%;
+/* HEADER */
+
+.navBar{
+    text-align: center;
 }
 
-.logo {
-    max-width: 155px;
-
-}
 .navBar a {
     text-decoration: none;
     color: var(--menu);
 }
 
+.logoBox{
+    width: 100%;
+}
+
+.logo {
+    max-width: 155px;
+}
+
+/* menu cabecera */
 .navList {
     list-style: none;
     text-transform: uppercase;
@@ -39,11 +46,38 @@ body {
 
 .navList li {
     display: inline;
-    margin: auto;
-    margin-left: 20px;
+    margin: 10px;
 }
 
+/* MAIN */
+
+.mainBox{
+    background-color: var(--background);
+    color: var(--text);
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    padding-top: 45%;
+}
 
 .mainTitle {
     font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width:768px){
+    
+    .navBar{
+        display: flex;
+    }
+    .navList{
+        width: 30%;
+    }
+
+    .mainTitle{
+        font-size: 40px;
+    }
 }
