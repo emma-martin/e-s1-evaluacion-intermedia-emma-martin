@@ -83,11 +83,15 @@ body {
     }
 
     .navList{
-        display: inline-block;
+        margin-left: auto;
+        width: 30%;
+        align-items: flex-end;
     }
 
     .logoBox{
-        width: 50%;
+        width: auto;
+        margin-right: auto;
+        
     }
     .logo{
         padding: 20px 30px;
