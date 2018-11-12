@@ -1,69 +1,77 @@
-:root {
-    --menu: #4a4a4a;
-    --background: #3CDBC0;
-    --text: #FFFFFF;
-}
 
-*{
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    text-align: center;
+    background: #3CDBC0;
+    color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Rubik', sans-serif;
-}
-
-.paddingTop10{
-    padding-top: 10px;
-}
-
 /* HEADER */
-
+.header{
+    position: fixed;
+    background: #FFFFFF;
+    color: #4a4a4a;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
 .navBar{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 13px;
 }
 
-.navBar a {
+.anchor {
+    width: 150px;
+    display: inline-block;
     text-decoration: none;
-    color: var(--menu);
+    color: #4a4a4a;
 }
 
 .logoBox{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .logo {
     max-width: 155px;
 }
 
-/* menu cabecera */
 .navList {
+    display: flex;
     list-style: none;
     text-transform: uppercase;
-    padding-bottom: 13px;
-    font-size: 16px; 
+    margin: 0;
+    padding: 0;
 }
 
-.navList li {
-    display: inline;
-    margin: 10px;
+.anchor-menu {
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #4a4a4a;
 }
 
 /* MAIN */
 
 .mainBox{
-    background-color: var(--background);
-    color: var(--text);
-    height: 90vh;
-    width: 100%;
-    margin: auto;
-    padding-top: 45%;
+    padding-top: 70%;
+    text-align: center;
 }
 
 .mainTitle {
+    width: 40%;
+    margin: auto;
     font-size: 30px;
-    text-align: center;
     text-transform: capitalize;
+    font-weight: 700;
 }
 
 /* MEDIA QUERIES */
@@ -71,12 +79,19 @@ body {
 @media all and (min-width:768px){
     
     .navBar{
-        display: flex;
-    }
-    .navList{
-        width: 30%;
+        justify-content: space-around;
     }
 
+    .navList{
+        display: inline-block;
+    }
+
+    .logoBox{
+        width: 50%;
+    }
+    .logo{
+        padding: 20px 30px;
+    }
     .mainTitle{
         font-size: 40px;
     }
